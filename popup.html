@@ -5,26 +5,30 @@
     <script src="popup.js"></script>
   </head>
   <body>
-  <div style="text-align: center">
-       <h1>Twitter Lottery</h1>
-   <form action="action.jsp" method="post">
-       추첨 트윗 링크 : <input type="text" name="link" ><br/>
-       <br/><hr><br/>
-       <p>
-        방법을 선택 해주세요 : &nbsp;&nbsp;
-        <label for="retweet">리트윗</label>
-        <input type="radio" name="check" value="retweet" id="retweet">
-         <label for="Like">좋아요</label>
-        <input type="radio" name="check" value="Like" id="Like">
-       </p>
-         <p>추첨 인원 선택 :  &nbsp;&nbsp;
-          <input type="number" id="countPeople" name="countPeople"
-           value="0" step="1" min="0" max="100">
-         </p>
-      <br/><br/>
-       <input type="submit" value="추첨하기">&nbsp;&nbsp;
-       <input type="reset" value="다시하기">
-   </form>
+    <header id="title">
+       <h1 class="title">Twitter Lottery</h1>
+    </header>
+    <div id="container">
+      <div class="container-in">
+        <form action="action.jsp" method="post">
+        <input type="text" name="link" placeholder="추첨 트윗 링크" class="input-field">
+        <p class="radio">
+          방법을 선택해주세요 : &nbsp;&nbsp;
+          <label for="retweet">리트윗</label>
+          <input type="radio" name="check" value="retweet" id="retweet">
+          <label for="Like">좋아요</label>
+          <input type="radio" name="check" value="Like" id="Like">
+        </p>
+        <p class="write">추첨 인원 선택 :  &nbsp;&nbsp;
+            <input type="number" id="countPeople" name="countPeople"
+            value="0" step="1" min="0" max="100">
+        </p>
+        <div class="confirm">
+            <input type="submit" value="추첨하기" class="btn">&nbsp;&nbsp;
+            <input type="reset" value="다시하기" class="btn">
+        </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
