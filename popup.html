@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="button.css">
+  </head>
+  <body>
+   <h1>Twitter Lottery</h1>
+   <form action="URL" method="post">
+       추첨 트윗 링크 : <input type="text" name="link" ><br/>
+       <br/><hr><br/>
+       <p>
+        방법을 선택 해주세요 : &nbsp;&nbsp;
+        리트윗 <input type="radio" name="retwwet" value="리트윗 대상자" chencked>
+        좋아요 <input type="radio" name="Like" value="좋아요 대상자">
+       </p>
+       <p>
+        <input type="button" value="-" onClick="javascript:this.form.people_select.value--;">
+          <input type="number" name="people" id="people_select" min="0" max="100" value="0">
+        <input type="button" value="+" onClick="javascript:this.form.people_select.value++;">
+       </p>
+      <br/><br/>
+       <input type="submit" value="추첨하기">&nbsp;&nbsp;
+       <input type="reset" value="다시하기">
+   </form>
+    <script src="popup.js"></script>
+  </body>
+</html>

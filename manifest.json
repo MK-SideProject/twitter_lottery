@@ -1,0 +1,26 @@
+//크롬확장파일에 대한 정보
+
+{
+  "name": "twitter lottery",
+  "description": "특정 트윗을 리트윗 또는 좋아요를 남긴 사람들을 대상으로 추첨할 수 있습니다",
+  "version": "1.0",
+  "manifest_version": 1,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [ "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/get_twitter16.png",
+      "48": "/images/get_twitter48.png",
+      "128": "/images/get_twitter128.png"
+    }
+  },
+"icons": {
+    "16": "/images/get_twitter16.png",
+    "48": "/images/get_twitter48.png",
+    "128": "/images/get_twitter128.png"
+  },
+  "options_page": "options.html"
+}
