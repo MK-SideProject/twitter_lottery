@@ -2,30 +2,29 @@
 <html>
   <head>
     <link rel="stylesheet" href="button.css">
+    <script src="popup.js"></script>
   </head>
   <body>
   <div style="text-align: center">
        <h1>Twitter Lottery</h1>
-   <form action="URL" method="post">
+   <form action="action.jsp" method="post">
        추첨 트윗 링크 : <input type="text" name="link" ><br/>
        <br/><hr><br/>
        <p>
         방법을 선택 해주세요 : &nbsp;&nbsp;
-        <label for="retwwet">리트윗</label>
-        <input type="radio" name="check" value="retwwet" id="retwwet">
+        <label for="retweet">리트윗</label>
+        <input type="radio" name="check" value="retweet" id="retweet">
          <label for="Like">좋아요</label>
         <input type="radio" name="check" value="Like" id="Like">
        </p>
-       <p>
-        <input type="button" value="-" onclick='count("plus")'/>
-        <input type="number" id='result' value="0"/>
-        <input type="button" value="+" onclick='count("minus")'/>
-       </p>
+         <p>추첨 인원 선택 :  &nbsp;&nbsp;
+          <input type="number" id="countPeople" name="countPeople"
+           value="0" step="1" min="0" max="100">
+         </p>
       <br/><br/>
        <input type="submit" value="추첨하기">&nbsp;&nbsp;
        <input type="reset" value="다시하기">
    </form>
-  </div>
-    <script src="popup.js"></script>
+    </div>
   </body>
 </html>
