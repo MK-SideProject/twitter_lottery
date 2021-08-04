@@ -8,19 +8,19 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": [ "activeTab"],
+  "permissions": [ "storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "/images/get_twitter16.png",
-      "48": "/images/get_twitter48.png",
-      "128": "/images/get_twitter128.png"
+      "16": "/icons/get_twitter16.png",
+      "48": "/icons/get_twitter48.png",
+      "128": "/icons/get_twitter128.png"
     }
   },
 "icons": {
-    "16": "/images/get_twitter16.png",
-    "48": "/images/get_twitter48.png",
-    "128": "/images/get_twitter128.png"
+    "16": "/icons/get_twitter16.png",
+    "48": "/icons/get_twitter48.png",
+    "128": "/icons/get_twitter128.png"
   },
   "options_page": "options.html"
 }
