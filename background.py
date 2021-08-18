@@ -3,7 +3,6 @@ import twitter_key
 
 ## 트위터 api와 연결
 def connect_api():
-
     consumer_key = twitter_key.DATABASE_TWITTER_KEY['consumer_key']
     consumer_secret = twitter_key.DATABASE_TWITTER_KEY['consumer_secret']
     access_token = twitter_key.DATABASE_TWITTER_KEY['access_token']
@@ -16,10 +15,10 @@ def connect_api():
 
     return api
 
-    
+api = connect_api()
+id=0
+rt_count = 15
+rt_list = api.retweets(id, rt_count)
 
-account = "@niru_gom"
-statuses = connect_api().user_timeline(screen_name=account, count=20)
-print(statuses)
-
-
+for rt in rt_list:
+    print(rt.user.screen_name)
