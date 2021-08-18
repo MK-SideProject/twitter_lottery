@@ -1,5 +1,7 @@
 import tweepy
 import twitter_key
+import re
+import random
 
 ## 트위터 api와 연결
 def connect_api():
@@ -14,11 +16,18 @@ def connect_api():
     api = tweepy.API(auth)
 
     return api
-
 api = connect_api()
-id=0
-rt_count = 15
-rt_list = api.retweets(id, rt_count)
+
+URL=input()
+id=re.findall(r'/\d+', URL)[0][1:]
+rt_count = 100
+rt_list = api.retweets(id)
+tmp=[]
 
 for rt in rt_list:
-    print(rt.user.screen_name)
+    tmp.append(rt.user.screen_name)
+print(len(tmp))
+
+# random.shuffle(tmp)
+# selected=tmp[:rt_count]
+# print(selected)
