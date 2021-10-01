@@ -1,8 +1,8 @@
 import tweepy
 import twitter_key
 import re
-import time
 import random
+
 
 ## 트위터 api와 연결
 def connect_api():
@@ -20,19 +20,14 @@ def connect_api():
 
 URL = input()
 api = connect_api()
+
+rt_count=int(input())
+
 id= re.findall(r'/\d+', URL)[0][1:]
-rt_list = api.retweets(id, 200)
-tmp=[]
-
-for rt in rt_list:
-    tmp.append([rt.user.name, rt.user.screen_name])
-print(len(tmp))
+rt_list = api.retweets(id,200)
 
 
-from time import time
-t = int(time())
-with open('retweeters-ids-%s-%s.txt' % (id, t), 'w', encoding='UTF-8') as f_out:
-     for r in tmp:
-         f_out.write(','.join(r))
-         f_out.write('\n')
-print('done')
+rt_lottery_list = random.sample(rt_list, rt_count)
+
+for rt in rt_lottery_list:
+    print(rt.user.screen_name)
