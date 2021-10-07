@@ -1,8 +1,24 @@
 # twitter_lottery
-트위터 추첨기
+트위터 추첨기 크롬확장프로그램
 
 # 설명
-트위터에 올린 특정 트윗의 링크를 통해서 리트윗한 계정을 랜덤으로 사람을 뽑아서 추첨해주는 추첨기 프로그램입니다
+트위터에 올린 특정 트윗의 링크를 통해서 리트윗한 계정을 랜덤으로 사람을 뽑아서 추첨해주는 크롬확장 프로그램입니다
+
+# 기술
+* html
+* css
+* python
+
+
+## html + css
+![twitterlottery_01](https://user-images.githubusercontent.com/77378559/136338516-46ba5c0e-04ff-4697-b9dd-783455add6f9.JPG)
+
+
+## python
+![twitterlottery_02](https://user-images.githubusercontent.com/77378559/136338816-31e5e88c-dd76-471c-8f05-caac8f8da13b.JPG)
+
+터미널 내용을 보시면 알 수 있듯이
+특정 트윗 링크를 입력하고 추첨할 인원을 입력하면 추첨인원이 뽑히는걸 확인 할 수 있습니다
 
 
 # 개발 과정
