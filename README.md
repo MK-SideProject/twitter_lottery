@@ -1,4 +1,4 @@
-# twitter_lottery
+# 💡 twittter lottery 크롬 확장 프로그램
 트위터 추첨기 크롬확장프로그램
 
 # 설명
