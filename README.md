@@ -7,7 +7,7 @@
 # 기술
 * html
 * css
-* python
+* python( tweepy 사용)
 
 
 ## html + css
